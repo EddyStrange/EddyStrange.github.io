@@ -17,18 +17,18 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>FEM for a bar element | Hexo</title>
-  <meta name="description" content="��ΪEddyStrange�ĵ�һƪ���ͣ�����ȷ��һ��������͵Ķ�λ��������ͻ����һЩ֪ʶ��������ʣ�������һλ �����ߣ�������Ϊ��Ҵ������������patran2013����һ��һά��Ԫ������Ԫģ�͡����ȱر���ԭ�ϣ�patran2013�Լ�һ��׼����ѧϰ�Ĵ��ԡ� ��ʼ����Ľ̳̣� 1.�ڽ">
+  <title>Hexo</title>
+  <meta name="description" content="作为EddyStrange的第一篇博客，首先确定一下这个博客的定位。这个博客会分享一些知识，或是随笔，博主是一位旅行者，而今天为大家带来的是如何用patran2013设置一个一维杆元的有限元模型。首先必备的原料：patran2013以及一个准备好学习的大脑。 开始今天的教程： 1.在建立一个杆元前，我们要做的一个必要的工作就是建立杆元的端点，我们可以看到界面的上方有很多的标签，我们选择geomet">
 <meta property="og:type" content="article">
-<meta property="og:title" content="FEM for a bar element">
+<meta property="og:title" content="Lionheart">
 <meta property="og:url" content="https://github.com/EddyStrange/EddyStrange.github.io.git/2018/04/13/FEM-for-a-bar-element/index.html">
 <meta property="og:site_name" content="Lionheart">
-<meta property="og:description" content="��ΪEddyStrange�ĵ�һƪ���ͣ�����ȷ��һ��������͵Ķ�λ��������ͻ����һЩ֪ʶ��������ʣ�������һλ �����ߣ�������Ϊ��Ҵ������������patran2013����һ��һά��Ԫ������Ԫģ�͡����ȱر���ԭ�ϣ�patran2013�Լ�һ��׼����ѧϰ�Ĵ��ԡ� ��ʼ����Ľ̳̣� 1.�ڽ">
+<meta property="og:description" content="作为EddyStrange的第一篇博客，首先确定一下这个博客的定位。这个博客会分享一些知识，或是随笔，博主是一位旅行者，而今天为大家带来的是如何用patran2013设置一个一维杆元的有限元模型。首先必备的原料：patran2013以及一个准备好学习的大脑。 开始今天的教程： 1.在建立一个杆元前，我们要做的一个必要的工作就是建立杆元的端点，我们可以看到界面的上方有很多的标签，我们选择geomet">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-14T03:13:32.746Z">
+<meta property="og:updated_time" content="2018-04-14T03:24:02.886Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FEM for a bar element">
-<meta name="twitter:description" content="��ΪEddyStrange�ĵ�һƪ���ͣ�����ȷ��һ��������͵Ķ�λ��������ͻ����һЩ֪ʶ��������ʣ�������һλ �����ߣ�������Ϊ��Ҵ������������patran2013����һ��һά��Ԫ������Ԫģ�͡����ȱر���ԭ�ϣ�patran2013�Լ�һ��׼����ѧϰ�Ĵ��ԡ� ��ʼ����Ľ̳̣� 1.�ڽ">
+<meta name="twitter:title" content="Lionheart">
+<meta name="twitter:description" content="作为EddyStrange的第一篇博客，首先确定一下这个博客的定位。这个博客会分享一些知识，或是随笔，博主是一位旅行者，而今天为大家带来的是如何用patran2013设置一个一维杆元的有限元模型。首先必备的原料：patran2013以及一个准备好学习的大脑。 开始今天的教程： 1.在建立一个杆元前，我们要做的一个必要的工作就是建立杆元的端点，我们可以看到界面的上方有很多的标签，我们选择geomet">
   <!-- Canonical links -->
   <link rel="canonical" href="https://github.com/EddyStrange/EddyStrange.github.io.git/2018/04/13/FEM-for-a-bar-element/index.html">
   
@@ -253,7 +253,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/04/13/FEM-for-a-bar-element/" class="title">FEM for a bar element</a>
+                <a href="/2018/04/13/FEM-for-a-bar-element/" class="title">(no title)</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-04-13T14:14:39.000Z" itemprop="datePublished">2018-04-13</time>
@@ -308,14 +308,6 @@
     
     <div class="article-header">
       
-        
-  
-    <h1 class="article-title" itemprop="name">
-      FEM for a bar element
-    </h1>
-  
-
-      
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
@@ -334,24 +326,17 @@
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <pre><code>��ΪEddyStrange�ĵ�һƪ���ͣ�����ȷ��һ��������͵Ķ�λ��������ͻ����һЩ֪ʶ��������ʣ�������һλ
-</code></pre><p>�����ߣ�������Ϊ��Ҵ������������patran2013����һ��һά��Ԫ������Ԫģ�͡����ȱر���ԭ�ϣ�patran2013�Լ�һ��<br>׼����ѧϰ�Ĵ��ԡ�</p>
-<p>��ʼ����Ľ̳̣�</p>
-<pre><code>1.�ڽ���һ����Ԫǰ������Ҫ����һ����Ҫ�Ĺ������ǽ�����Ԫ�Ķ˵㣬���ǿ��Կ���������Ϸ��кܶ�ı�ǩ����
-</code></pre><p>��ѡ��geometry,�ڸñ�ǩ��Ŀ¼��ѡ��points����point coordinate list����[x y z]����ʽ�����һ���˵�����꣬Ȼ��<br>��apply�������ͽ�����һ���㡣������뿴������㣬���Home-&gt;Misc.-&gt;Point Size,�����Ϳ��Կ������ˡ���������ͬ��<br>�ķ��������ڶ����㣬����ѡ����ǵ�[0 0 0]��[2000 0 0],��ס�����������Ҫapplyһ�¡�</p>
-<pre><code>2.��һ���ߡ����ұ߹������е�Object��ΪCurve��Ȼ�����ε����һ����͵ڶ����㣬�����ͽ�������һ��ֱ�ߣ�ע
-</code></pre><p>�⣺���ﲻ��apply��</p>
-<pre><code>3.���֡����Meshing�����￴���ұߵĹ����������˱仯��Object��ʾ����mesh seed,��ʾ�Ե�Ԫ���ʽ����趨����
-</code></pre><p>��ѡ��number of elements,Ȼ����number=10,ֱ��������ѡ�ոս������߶Σ�apply,�����ͻ��ֺ��˵�Ԫ ��Ȼ��Object<br>��Ϊmesh,Type��Ϊcurve����ʱ���ٴε�ѡ����ֱ�ߣ�Ȼ��apply����������Ԫģ�ͽ����ˡ������鿴���ɵĵ�Ԫ�ͽڵ㣬��<br>��Action��Ϊshow�����ʱ������Ƶ����ϣ��ͻᷢ�ָո����ǻ���ֱ���Ѿ�������Ϊ��10����Ԫ�������Ԫ���ǽڵ�Ϳ�<br>�Բ鿴��Ԫ���ǽڵ����Ϣ�����ǽ�����ģ�͵Ľṹ�����Ǹ�Ԫ�Ĳ��Ϻ�Լ�������������������Ҫ��һ�������á�</p>
-<pre><code>4.�������ϡ�ѡ��properties,Ȼ��ѡ��isotropic,Ȼ����material name�����������������steel,Ȼ��������ѡ��
-</code></pre><p>input properties,��Ӧ�������Ԫ�Ĳ���������apply�����Ͼͽ����ˡ�</p>
-<pre><code>5.����Լ���������������ǵ������Ԫ��һ����������������Ҫ������һ�˼���λ��Ϊ0�����Ϊ0,��Լ������������
-</code></pre><p>��loads/BCs,Ȼ������ѡinput data,�������ĸ����������޸ģ���һ����λ��Լ�����ڶ��������Լ�������ǽ����߶���Ϊ</p>
-<p><0 0="">,Ȼ���OK���ٵ�select application region,��ѡֱ����һ�㣬�ٵ�add,Ȼ��OK��</0></p>
-<pre><code>6.���ø�Ԫ�Ĳ������ٴε�properties,Ȼ���ұ߹������е�Object��Ϊ1D��Ȼ���input properties,Ȼ������Ԫ
-</code></pre><p>��������ҳ������ֻ��Ҫ����ͷ�����������ɣ���һ��section name,����ֱ�ӵ��ұߵĹ�����ͼ�꣬�ᷢ�ֵ�������һ���հ�<br>�Ĺ���������ʱ�������ٵ�ҳ���в���create sections,Ȼ��ѡȡ��Ҫ�Ľ�����״�����ý���������ٸ�����������Ȼ��OK��<br>Material nameҲ�ǵ��ұߵĲ�״ͼ�꣬Ȼ��ѡ֮ǰ�����Լ������Ĳ��ϣ�Ȼ����дbar orientation,ֱ����<0 0="">�ͺã����<br>�����ý��淽λ�ǵĲ��������ǽ���λ�Ǿ���Ϊ0��OK��</0></p>
-<pre><code>��Ԫ����������
-</code></pre>
+        <p>作为EddyStrange的第一篇博客，首先确定一下这个博客的定位。这个博客会分享一些知识，或是随笔，博主是一位<br>旅行者，而今天为大家带来的是如何用patran2013设置一个一维杆元的有限元模型。首先必备的原料：patran2013以及一个<br>准备好学习的大脑。</p>
+<p>开始今天的教程：</p>
+<p>1.在建立一个杆元前，我们要做的一个必要的工作就是建立杆元的端点，我们可以看到界面的上方有很多的标签，我<br>们选择geometry,在该标签的目录下选择points，在point coordinate list中以[x y z]的形式输入第一个端点的坐标，然后<br>点apply，这样就建立了一个点。如果你想看到这个点，点击Home-&gt;Misc.-&gt;Point Size,这样就可以看见点了。我们再以同样<br>的方法建立第二个点，博主选择的是点[0 0 0]和[2000 0 0],记住输完点的坐标后要apply一下。</p>
+<p>2.拉一条线。将右边工具栏中的Object改为Curve，然后依次点击第一个点和第二个点，这样就建立好了一条直线，注<br>意：这里不用apply。</p>
+<p>3.播种。点击Meshing，这里看到右边的工具栏发生了变化，Object显示的是mesh seed,表示对单元性质进行设定，我<br>们选择number of elements,然后令number=10,直接用鼠标点选刚刚建立的线段，apply,这样就划分好了单元 。然后将Object<br>改为mesh,Type改为curve，这时候再次点选那条直线，然后apply，这样有限元模型建好了。如果想查看生成的单元和节点，可<br>将Action改为show，这个时候将鼠标移到线上，就会发现刚刚我们画的直线已经被划分为了10个单元，点击单元或是节点就可<br>以查看单元或是节点的信息。我们建好了模型的结构，但是杆元的材料和约束条件还不清楚，还需要进一步的设置。</p>
+<p>4.建立材料。选择properties,然后选择isotropic,然后在material name中输入材料名，比如steel,然后下拉，选择<br>input properties,对应地输入杆元的参数，最后点apply，材料就建好了。</p>
+<p>5.建立约束条件。假设我们的这个杆元是一个悬臂梁，我们需要在它的一端加上位移为0，桡度为0,的约束条件。我们<br>点loads/BCs,然后下拉选input data,这里有四个向量可以修改，第一个是位移约束，第二个是桡度约束，我们将两者都改为</p>
+<p><0 0="">,然后点OK。再点select application region,点选直线上一点，再点add,然后OK。</0></p>
+<p>6.设置杆元的参数。再次点properties,然后将右边工具栏中的Object改为1D，然后点input properties,然后进入杆元<br>属性设置页面我们只需要设置头三个参数即可，第一个section name,我们直接点右边的工字型图标，会发现弹出的是一个空白<br>的工具栏，这时候，我们再点页面中部的create sections,然后选取所要的截面形状，设置截面参数，再给截面起名，然后OK。<br>Material name也是点右边的布状图标，然后选之前我们自己建立的材料，然后填写bar orientation,直接填<0 0="">就好，这个<br>是设置截面方位角的参数，我们将方位角均设为0。OK。</0></p>
+<p>杆元建立好啦！</p>
+
       
     </div>
     <div class="article-footer">
@@ -360,7 +345,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://github.com/EddyStrange/EddyStrange.github.io.git/2018/04/13/FEM-for-a-bar-element/" title="FEM for a bar element" target="_blank" rel="external">https://github.com/EddyStrange/EddyStrange.github.io.git/2018/04/13/FEM-for-a-bar-element/</a>
+      <a href="https://github.com/EddyStrange/EddyStrange.github.io.git/2018/04/13/FEM-for-a-bar-element/" title="" target="_blank" rel="external">https://github.com/EddyStrange/EddyStrange.github.io.git/2018/04/13/FEM-for-a-bar-element/</a>
     </li>
     
     <li class="post-copyright-license">
